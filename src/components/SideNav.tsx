@@ -9,15 +9,13 @@ const SideNav = () => {
   const btn5: string = 'Links';
 
   return (
-    <div className="w-1/6 flex justify-center">
-        <ul className="w-full">
-            <li><Link to="/test"><Button text={ btn1 }/></Link></li>
-            <li><Link to="/test"><Button text={ btn2 }/></Link></li>
-            <li><Link to="/test"><Button text={ btn3 }/></Link></li>
-            <li><Link to="/test"><Button text={ btn4 }/></Link></li>
-            <li><Link to="/test"><Button text={ btn5 }/></Link></li>
-        </ul>
-    </div>
+    <ul className="w-full sticky top-[88px]">
+        <li><Link to="/test"><Button text={ btn1 }/></Link></li>
+        <li><Link to="/test"><Button text={ btn2 }/></Link></li>
+        <li><Link to="/test"><Button text={ btn3 }/></Link></li>
+        <li><Link to="/test"><Button text={ btn4 }/></Link></li>
+        <li><Link to="/test"><Button text={ btn5 }/></Link></li>
+    </ul>
   );
 };
 

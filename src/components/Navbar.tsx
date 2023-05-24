@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav>
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <div className="flex justify-center w-2/12">
-          <Link to="/" className="flex items-center">
+      <div className="min-w-[1000px] flex items-center justify-start p-4 bg-white">
+        <div className="flex justify-center w-2/12 mr-0 max-w-[250px] min-w-[250px]">
+          <Link to="/">
             <span className="self-center text-2xl font-semibold whitespace-nowrap font-serif dark:text-black">
               Isolumi
             </span>
           </Link>
         </div>
-        <div className="w-7/12 content-center">
+        <div className="w-7/12 min-w-[500px] max-w-[1000px] mr-[20px] content-center">
           <form>
             <label
               htmlFor="default-search"
@@ -55,11 +55,13 @@ const Navbar = () => {
             </div>
           </form>
         </div>
-        <div className="w-1/6 flex justify-between ml-10">
-          <Link to="/resume" className="ml-5">
+        <div className="max-w-[150px] min-w-[150px] ml-auto flex justify-between">
+          <Link to="/resume">
             Resume
           </Link>
-          <Link to="/my-projects">My Projects</Link>
+          <Link to="/my-projects">
+            My Projects
+          </Link>
         </div>
       </div>
     </nav>
