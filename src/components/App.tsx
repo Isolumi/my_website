@@ -5,12 +5,12 @@ import MainPage from "./MainPage";
 export default function App() {
   return (
     <Router>
-      <div className="sticky top-0">
+      <div className="w-100 sticky top-0">
         <Navbar />
       </div>
       <div className="w-100">
         <Routes>
-          <Route path="/" element={<MainPage />} />
+            <Route path="/" element={<MainPage />} />
         </Routes>
       </div>
     </Router>

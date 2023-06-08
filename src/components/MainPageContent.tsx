@@ -3,7 +3,7 @@ import MainPageProfile from "./MainPageProfile";
 const MainPageContent = () => {
   return (
     <>
-      <h1 className="text-2xl font-serif">Testing</h1>
+      <h1 className="text-2xl font-serif">Hubert Xu</h1>
       <span className="float-right">
         <MainPageProfile />
       </span>

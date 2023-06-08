@@ -2,15 +2,17 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav>
-      <div className="min-w-[1000px] flex items-center justify-start p-4 bg-white">
-        <div className="flex justify-center w-2/12 mr-0 max-w-[250px] min-w-[250px]">
+    <nav className="border-red w-100 flex justify-center">
+      <div className="min-w-[720px] w-[1280px] flex justify-start items-center p-4 bg-white">
+
+        <div className="flex justify-center w-2/12 max-w-[250px] min-w-[250px]">
           <Link to="/">
             <span className="self-center text-2xl font-semibold whitespace-nowrap font-serif dark:text-black">
               Isolumi
             </span>
           </Link>
         </div>
+        
         <div className="w-7/12 min-w-[500px] max-w-[1000px] mr-[20px] content-center">
           <form>
             <label
